@@ -1,0 +1,5 @@
+rootProject.name = 'onetap-pc'
+
+include 'shared-models'
+include 'backend'
+include 'desktop-agent'

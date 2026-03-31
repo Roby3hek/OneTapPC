@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+dependencies {
+    implementation project(':shared-models')
+    
+    // WebSocket клиент
+    implementation 'org.java-websocket:Java-WebSocket:1.5.6'
+    
+    // JSON
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.0'
+    
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+application {
+    mainClass = 'com.onetap.pc.desktop.DesktopAgentApplication'
+}
